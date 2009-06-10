@@ -1,0 +1,7 @@
+.autotest
+History.txt
+Manifest.txt
+README.rdoc
+Rakefile
+lib/rake_secrets.rb
+test/test_rake_secrets.rb

@@ -1,0 +1,9 @@
+require "autotest/restart"
+
+Autotest.add_hook :initialize do |at|
+  at.testlib = "minitest/autorun"
+
+  %w(.git History.txt Rakefile Manifest.txt README.rdoc).each do |f|
+    at.add_exception f
+  end
+end
